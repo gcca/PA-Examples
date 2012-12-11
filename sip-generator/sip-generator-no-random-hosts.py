@@ -24,7 +24,7 @@ for i in range(iteration):
         connect=s.connect((sys.argv[1],port))
         # Send the SIP register request
         s.send('REGISTER sip:' + (sys.argv[1]) + ' sip/2.0' + '\r\n')
-#        print server + ' - Port ' + port + ' - Iterations ' + iteration + ' - Wait Time: ' + wait + ' seconds' 
-        s.close
+        print "Generating SIP Register commands to " + server + " Port", port
 	time.sleep(wait)
+s.close
 sys.exit(1)
